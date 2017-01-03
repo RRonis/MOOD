@@ -1,0 +1,830 @@
+html{
+  background-color: none;
+}
+body{
+  font-family: 'Roboto';
+  margin-top: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  }
+
+*{
+  box-sizing: border-box;
+  margin: 0px;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+
+}
+
+table{
+  border-collapse: collapse;
+  text-align: center;
+  vertical-align: middle;
+  /*color: white;*/
+}
+/*formatējums mazajiem-mob ekrāniem*/
+/*@media (max-width: 939px) {}*/
+/*END of formatējums mobilajiem ekrāniem*/
+
+/*@media (min-width: 940px) {}*/
+/*formatējums lielajiem ekrāniem*/
+
+.king-base{
+  height: 5480px;
+  margin: 0 auto;
+  margin-top: 0;
+  color: white;/*TEKSTA KRĀSA VISĀ LAPĀ!!!*/
+}
+  /*aprakstošais info teksta blokos*/
+    .AB-center-text {
+      font-size: 20px;
+      font-weight: lighter;
+      text-align: center;
+      line-height: 160%;
+      position: relative;
+      padding: 5px;
+      }
+
+  /*virsrakstu formatējums visiem blokiem*/
+    .b-title{
+      font-size: 30px;
+      font-weight: normal;
+      text-transform: uppercase;
+      text-align: center;
+      display: block;
+      position: relative;
+      top: 110px;
+      /*border: solid 1px red;*/
+    }
+    .clearfix::after
+    .clearfix::before {
+      content: "";
+      clear: both;
+      display: table;
+    }
+    /*FLOAT STOPS*/
+
+/*==========================================*/
+    .pirmais-bloks {
+      height: 820px;
+      background-image: url("bildes/bg-red.svg");
+      background-size: cover;
+      margin: 0 auto;
+      overflow: scroll;
+      }
+      /*.pb-mask{
+          position: absolute;
+          height: 100%;
+          width: 100%;
+          background-color: #d33523;
+          opacity: 0.8;
+          z-index: -1;
+        }*/
+
+      .nav-bar{
+        /*navigācija vienmēr ekrāna augšā:*/
+        position: fixed;
+        z-index: 2;
+        width:100%;
+        /*navigācija vienmēr ekrāna augšā:*/
+            /*izskats un novietojums:*/
+        height: 70px;
+        background-color: #d33523;
+        opacity: 0.8;
+        margin: 0 auto;
+            /*teksts*/
+        font-size: 14px;
+        font-weight: lighter;
+      }
+      .nav-bar-fixed {
+        position: absolute;
+        margin: 0 auto;
+        width:100%;
+        height: 70px;
+        /*background-color: green;*/
+        background-color: #d33523;
+        opacity: 0.8;
+        z-index: 0;
+      }
+      .nav-bar-logo-container{
+        position: relative;
+        left: 90px;
+        float: left;
+        width: 168px;
+        z-index: 3;
+      }
+        .nav-bar-logo-container img {
+            float: left;
+            width: 43px;
+            margin: 10px 0 5px;
+          }
+        .nav-bar span {
+            float: left;
+            padding: 23px 8px;
+            /*margin: 20px 20px;*/
+          }
+        .nav-bar-links {
+          /*float: right;*/
+          position: absolute;
+          right: 90px;
+          /*min-width: 414px;*/
+          padding: 24px;
+        }
+        .nav-bar-links a {
+            padding: 19px 6px 23px;
+            border-top: 5px solid #d33523;
+          }
+          .nav-bar-links a:hover {
+            border-top: 5px solid white;
+            border-color: rgba(255, 255, 255, 0.6);
+            cursor: pointer;
+          }
+
+      .pb-horiz-logo{
+          position: absolute;
+          top: 236px;
+          left: 6%;
+          right: 6%;
+          display: block;
+          margin: 0 auto;
+          height: 313px;
+          max-width: 918px;
+          background-image: url("bildes/Logo HORIZONTĀLI.png");
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-position: center;
+        }
+      .pb-text{
+          /*teksta īpašības aprakstītas .AB-center-text*/
+          top: 590px;
+        }
+        .pb-text p {
+            margin-top: 0;
+            margin-bottom: 0;
+          }
+      .pb-social{
+          position: relative;
+          top: 625px;
+          display: block;
+          text-align: center;
+          letter-spacing: 10px;
+        }
+          .pb-social a{
+              color: white;
+              opacity: 0.3;
+              font-size: 29px;
+            }
+          .pb-social a:hover{
+              color: white;
+              opacity: 0.8;
+              cursor: pointer;
+            }
+
+  /*--------mazās slider pogas----------*/
+
+      /*-------VERT-------*/
+      .mikro-pogu-kont-vert{
+        width: 30px;
+        height: 100px;
+        position: absolute;
+      }
+      .pb-mpk-kur{
+        /*mikropogu novietojums 1.blokā*/
+        right: 4%;
+        top: 380px;
+      }
+      .slider-button-vert{
+        position: relative;
+        display: block;
+        padding: 4px 4px;
+        margin-top: 15px; /*vert attālums starp mikropogām*/
+        margin-left: 10px; /*horiz centrējums savā konteinerī*/
+        border-radius: 50%;
+        border: solid 1px white;
+        background: none;
+        opacity: 0.5;
+      }
+      .slider-button-vert:hover{
+        background: white;
+        opacity: 0.9;
+        cursor: pointer;
+      }
+      /*-------End of VERT-------*/
+      /*-------slider HORIZ-----------*/
+      .mikro-pogu-kont-horiz{
+        width: 95px;
+        height: 30px;
+        position: relative;
+      }
+      .ob-mpk-kur{
+        /*mikropogu novietojums 2.blokā*/
+        top: 200px;
+        margin: 0 auto;
+      }
+      .slider-button-horiz{
+        position: relative;
+        display: block;
+        padding: 4px 4px;
+        margin: 10px 10px;
+        border-radius: 50%;
+        border: solid 1px white;
+        background: none;
+        float: left;
+        opacity: 0.5;
+      }
+      .slider-button-horiz:hover{
+        background: white;
+        opacity: 0.9;
+        cursor: pointer;
+      }
+  /*-------end of HORIZ mikropogas----------*/
+      .pilna{
+        background-color: white;
+        opacity: 0.7;
+      }
+
+/*===========PAKALPOJUMI===============================*/
+    .otrais-bloks {
+        /*sarkanais / PAKAPLOJUMI*/
+        height: auto;
+        min-height: 580px;
+        margin: 0 auto;
+        margin-top: 0;
+        overflow: scroll;
+        /*border: solid 1px red;*/
+        background-color: rgba(211, 53, 35, 0.9);
+      }
+      .ob-table-container{
+        display: block;
+        position: relative;
+        top: 160px;
+        left: 5%;
+        width: 90%;
+        height: auto;
+        /*border: solid 1px white;*/
+      }
+      .ob-table-container table,
+      .ob-table-container th {
+        /*border: 1px solid white;*/
+        height: 47px;
+        font-size: 18px;
+        font-weight: normal;
+        text-transform: uppercase;
+        }
+      .ob-table-container table,
+      .ob-table-container td {
+        /*border: 1px solid white;*/
+        /*text-align: justify;*/
+        /*height: 35px;*/
+        vertical-align: top;
+        padding: 28px;
+        font-size: 16px;
+        text-transform: none;
+        font-weight: lighter;
+        /*tekstam līniju spacing*/
+          line-height: 150%;
+        }
+/*===========MUSU DARBI===============================*/
+    .tresais-bloks {
+        /*zaļais /musu darbi*/
+        height: 422px;
+        /*height: 100%;*/
+        background-image: url('bildes/bg-green.svg');
+        background-size: cover;
+        margin: 0 auto;
+        overflow: scroll;
+      }
+      .tb-mask{
+          position: absolute;
+          height: 422px;
+          width: 100%;
+          background-color: rgba(87, 170, 104, 0.2);
+        }
+      .tb-text{
+          /*teksta īpašības aprakstītas .AB-center-text*/
+          position: relative;
+          top: 150px;
+          width: 80%;
+          line-height: 160%;
+          margin: 0 auto;
+        }
+      .pogas{
+        position: relative;
+        margin: 0 auto;
+        text-align: center;
+        width: 90%;
+        height: auto;
+      }
+      .tb-pogas-kur{
+        position: relative;
+        top: 170px;
+      }
+        .pogas button {
+            /*teksts pogā*/
+            text-transform: uppercase;
+            text-align: center;
+            font-size: 13px;
+            /*poagas izmērs ar paddingu*/
+            padding: 10px 15px;
+            margin: 0 31px;
+            /*teksta krāsa*/
+            color: #ffffff;
+            background: none;
+            /*apaļie stūri un borde*/
+            border-radius: 7px;
+            border: 1px solid transparent;
+          }
+        .pogas button:hover,
+        .pogas .active {
+            border-radius: 8px;
+            border: 1px solid white;
+            cursor: pointer;
+          }
+    /*-------komandas bildes--------------------------*/
+    .tb-bilzu-konteineris{
+        min-height: 600px;
+        height: auto;
+        width: auto;
+        /*border: solid 1px red;*/
+      }
+      .tb-mpk-kur{
+        /*mikropogu novietojums 3.blokā*/
+        top: 180px;
+        margin: 0 auto;
+      }
+      .tb-bildes-bloks {
+          width: 24.98%;
+          height: auto;
+          min-height: 300px;
+          /*min-width: 220px;*/
+          /*border: solid 1px blue;*/
+          float:left;
+          background-size: cover;
+        }
+      .tb-bildes-bloks-overlay{
+        height: 300px;
+        display: block;
+        background: rgba(87, 170, 104, 0.8);
+        opacity: 0;
+      }
+        .tb-bildes-bloks-overlay:hover {
+          opacity: 0.8;
+          cursor: pointer;
+        }
+        /*--------spiedrinki----------*/
+        .tb-aplu-container{
+          background: none;
+          width: 100px;
+          height: 66px;
+          position: relative;
+          top: 78px;
+          left: calc(50% - 50px);
+        }
+        .apli{
+          display: block;
+          margin: auto;
+          background: none;
+          border-radius: 50%;
+          border: 1px solid white;
+        }
+        .aplis-1{
+          width: 10px;
+          height: 10px;
+          position: absolute;
+          left: calc(50% - 5px);
+          top: calc(50% - 5px);
+        }
+        .aplis-2{
+          width: 20px;
+          height: 20px;
+          position: absolute;
+          left: calc(50% - 10px);
+          top: calc(50% - 10px);
+        }
+        .aplis-3{
+          width: 30px;
+          height: 30px;
+          position: absolute;
+          left: calc(50% - 15px);
+          top: calc(50% - 15px);
+        }
+        .aplis-4{
+          width: 40px;
+          height: 40px;
+          position: absolute;
+          left: calc(50% - 20px);
+          top: calc(50% - 20px);
+        }
+        /*--------spiedrinki end----------*/
+        .tb-overlay-title{
+          /*teksts iekš overlay bildes */
+          text-align: center;
+          font-size: 18px;
+          margin-top: 100px;
+          /*margin-top: 120px;*/
+        }
+        .tb-overlay-undertitle{
+          text-align: center;
+          font-size: 14px;
+          font-weight: lighter;
+          margin-top: 2px;
+          margin-bottom: 60px;
+        }
+        /*===========darbu foto==============o*/
+          .ph1{
+                  background-color: #ea5a00;
+                  background-image: url('bildes/photo-02.png');
+                }
+          .ph2{
+                  background-color: #00a6eb;
+                  background-image: url('bildes/photo-03.png');
+                }
+          .ph3{
+                  background-color: #e966a3;
+                  background-image: url('bildes/photo-04.png');
+                }
+          .ph4{
+                  background-color: #fff159;
+                  background-image: url('bildes/photo-05.png');
+                }
+          .ph5{
+                  background-color: #fff159;
+                  background-image: url('bildes/photo-06.png');
+                }
+          .ph6{
+                  background-color: #e966a3;
+                  background-image: url('bildes/photo-01.png');
+                }
+          .ph7{
+                  background-color: #00a6eb;
+                  background-image: url('bildes/photo-07.png');
+                }
+          .ph8{
+                  background-color: #ea5a00;
+                  background-image: url('bildes/photo-08.png');
+                }
+
+/*============cenrādis=============================*/
+    .ceturtais-bloks {
+        height: 280px;
+        background-image: url('bildes/bg-green.svg');
+          /*nav skaidrs kā šis strādā un kā piešķirt HUE*/
+          filter:hue-rotate(10deg);
+        background-size: cover;
+        margin: 0 auto;
+        /*overflow: scroll;*/
+      }
+      .cb-mask{
+          position: absolute;
+          height: inherit;
+          width: 100%;
+          background-color: #6ffaff;
+          opacity: 0.2;
+        }
+      /*pogu konteinera novietojums Trešajam Blokam */
+      .cb-pogas-kur {
+        top: 165px;
+      }
+
+      /* ---------CENAS TABULA-----------  */
+      .ceturtais-bloks-table {
+        /*zaļās tabulas PAMATNE*/
+        height: 520px;
+        margin: 0 auto;
+        overflow: scroll;
+        background-color: #2a5759;
+      }
+      /*novietojums*/
+      .cb-table-container{
+          position: relative;
+          top: 0px;
+          width: 68%;
+          margin: 0 auto;
+          /*border: solid 1px yellow;*/
+        }
+        .cb-table-container td,
+        .cb-table-container th {
+          /*tabulas kolonnas platums no visa redzamā loga paltuma */
+          width: 12%;
+          border-bottom: 1px solid #437c7e;
+          padding-top: 15px;
+          padding-bottom: 15px;
+        }
+        .cb-table-container th {
+          /*tabulas pirmās rindas augstums*/
+          padding-top: 44px;
+          padding-bottom: 22px;
+          font-weight: normal;
+        }
+        p.cb-table-row {
+            font-size: 16px;
+            font-weight: lighter;
+            color: #a2d5d7;
+          }
+        p.cb-euro-cena{
+            font-size: 32px;
+            padding-top: 1px;
+            padding-bottom: 1px;
+          }
+        p.cb-table-col{
+            font-size: 20px;
+          }
+        .cb-table-container button{
+            border: 1px solid white;
+            /*tabulas pēdējās rindas augstums
+            un pogas novietojums:*/
+            margin: 12px 1px 67px 1px;
+            /*poagas izmērs augstums & platums*/
+            padding: 11px 40px;
+            /*pārējie pogu parametri css otrajā blokā*/
+            cursor: pointer;
+          }
+          .cb-table-container button:hover{
+              border: 1px solid #71b2b4;
+              background: #478587;
+              cursor: pointer;
+            }
+        .cb-table-container .pogas td {
+              border-bottom: none;
+        }
+        .cb-table-container .emphasize {
+              background: #316769;
+        }
+/*=================mūsu komanda=========================*/
+    .piektais-bloks {
+        /*zalais /mūsu komanda*/
+        height: 860px;
+        background-color: #57aa68;
+        margin: 0 auto;
+        overflow: scroll;
+      }
+      .pkt-text{
+          /*teksta īpašības aprakstītas .AB-center-text*/
+          position: relative;
+          display: block;
+          margin: 0 auto;
+          top: 150px;
+          line-height: 155%;
+          width: 85%;
+          opacity: 0.8;
+          /*border: solid 1px white;*/
+        }
+      .pktb-mpk-kur{
+        /*mikropogu novietojums 5.blokā*/
+        top: 165px;
+        margin: 0 auto;
+      }
+      .pktb-visufoto-konteineris{
+          position: relative;
+          top: 190px;
+          min-height: 390px;
+          height: auto;
+          width: 1290px;
+          /*width: auto;*/
+          margin: 0 auto;
+          /*border: solid 1px red;*/
+        }
+        .pktb-komandas-dalibnieks{
+          position: relative;
+          display: block;
+          margin-left: 30px;
+          margin-right: 30px;
+          /*border: solid 1px blue;*/
+          float: left;
+          width: 262px;
+          height: 390px;
+        }
+          .pktb-viena-foto-konteineris{
+            width: 260px;
+            height: 288px;
+            /*border: solid 1px yellow;*/
+          }
+              .pktb-foto-01{
+                height: inherit;
+                background-size: cover;
+                background-image: url('bildes/01.png');
+              }
+              .pktb-foto-02{
+                height: inherit;
+                background-size: cover;
+                background-image: url('bildes/02.png');
+                /*border: solid 1px red;*/
+                border-radius: 3px;
+                box-shadow: 10px 10px 5px #33663d;
+              }
+              .pktb-foto-03{
+                height: inherit;
+                background-size: cover;
+                background-image: url('bildes/03.png');
+              }
+              .pktb-foto-04{
+                height: inherit;
+                background-size: cover;
+                background-image: url('bildes/04.png');
+              }
+              .pktb-vards-uzvards{
+                position: relative;
+                top: 30px;
+                margin: 0 auto;
+                font-size: 18px;
+                text-align: center;
+                /*border: 1px solid white;*/
+              }
+              .pktb-tituls{
+                position: relative;
+                top: 40px;
+                font-size: 13px;
+                text-align: center;
+                opacity: 0.56;
+                /*border: 1px solid red;*/
+              }
+          /*-------pkt bloka overlays------*/
+          .pktb-bildes-overlay{
+            height: 288px;
+            width: 261px;
+            /*height: inherit;*/
+            display: block;
+            position: relative;
+            /*border: solid 1px yellow;*/
+            background: rgba(87, 170, 104, 0.8);
+            opacity: 0;
+            z-index: 0;
+          }
+            .pktb-bildes-overlay:hover {
+              opacity: 0.8;
+              cursor: pointer;
+            }
+
+            /*--------end of soc ikonas---------*/
+            .pktb-overlay-title{
+              /*txt iekš overlay bildes */
+              /*border: solid 1px blue;*/
+              display: block;
+              position: relative;
+              top: 26px;
+              width: 90%;
+              margin: 0 auto;
+              font-size: 18px;
+              font-weight: normal;
+              line-height: 130%;
+              text-align: center;
+              /*z-index: 1;*/
+            }
+            .pktb-overlay-undertitle{
+              /*border: solid 1px red;*/
+              display: block;
+              position: relative;
+              top: 29px;
+              width: 90%;
+              margin: 0 auto;
+              font-size: 16px;
+              line-height: 160%;
+              font-weight: lighter;
+              text-align: center;
+              /*z-index: 1;*/
+            }
+
+            .pktb-overlay-social{
+              /*soc ikonas iekš overlay bildes */
+              /*border: solid 1px blue;*/
+              display: block;
+              position: relative;
+              top: 80px;
+              width: 146px;
+              margin: 0 auto;
+              font-weight: normal;
+              text-align: center;
+              /*z-index: 1;*/
+            }
+            .pktb-box40x40{
+              position: relative;
+              display: block;
+              width: 40px;
+              height: 40px;
+              float: left;
+              background: #505050;
+              opacity: 1;
+              margin-left: 5px;
+              /*z-index: 2;*/
+              border-style: none;
+              border-radius: 3px;
+            }
+            .pktb-overlay-social a{
+                color: white;
+                text-align: center;
+                opacity: 0.7;
+                font-size: 30px;
+                z-index: 3;
+              }
+              .pktb-overlay-social a:hover{
+                  opacity: 1;
+                  cursor: pointer;
+                }
+            /*--------soc ikonas----------*/
+            .pktb-soc-poga{
+              background: none;
+              width: 100px;
+              height: 66px;
+              position: relative;
+              top: 78px;
+              left: calc(50% - 50px);
+            }
+/*==========================================*/
+    .sestais-bloks {
+        /*zilais /sazināties*/
+        height: 720px;
+        background-image: url('bildes/bg-blue.svg');
+        background-size: cover;
+        /*background-color: rgba (46, 45, 107, 0.2);*/
+        margin: 0 auto;
+        overflow: scroll;
+      }
+      .sb-mask{
+        position: absolute;
+        height: inherit;
+        width: 100%;
+        background-color: #2e2d6b;
+        opacity: 0.2;
+        /*border: solid 1px red;*/
+      }
+      .sb-forma{
+        position: relative;
+        top: 160px;
+        margin: 0 auto;
+        width: 640px;
+        /*border: solid 1px red;*/
+      }
+      .formas-rinda{
+        position: relative;
+        margin: 10px;
+      }
+      .sb-ievades-lauks{
+        background: #2e2d6b;
+        opacity: 0.7;
+        width: 100%;
+        padding: 13px;
+        border-radius: 5px;
+        border-style: none;
+        font-size: 15px;
+        /*font-style: normal;*/
+        font-weight: lighter;
+        text-align: left;
+        color: white;
+      }
+      .mazais{
+        height: auto;
+      }
+      .lielais{
+        /*min-height: 200px;*/
+        /*resize: vertical;*/
+        overflow: auto;
+      }
+      .submit {
+        background-color: transparent;
+        border: solid 1px white;
+        text-align: center;
+        opacity: 1;
+      }
+      .submit:hover{
+      	cursor: pointer;
+        background: #2e2d6b;
+        opacity: 0.7;
+        border: solid 1px grey;
+        cursor: pointer;
+      }
+      .sb-kontakti{
+        font-size: 18px;
+        text-align: center;
+        font-weight: lighter;
+        position: relative;
+        opacity: 0.5;
+        top: 200px;
+      }
+/*==========================================*/
+    .septitais-bloks {
+        /*karte*/
+        height: 700px;
+        background-color: #2e2d6b;
+        margin: 0 auto;
+        overflow: scroll;
+      }
+      .map-container{
+        height: 602px;
+        width: 100%;
+        border: none;
+      }
+      .sptb-footer{
+        /*color: white;*/
+        font-size: 13px;
+        text-align: center;
+        font-weight: lighter;
+        position: relative;
+        opacity: 0.5;
+        top: 35px;
+      }
+
+  /*end of @media (min-width: 940px)*/
+/*}*/
